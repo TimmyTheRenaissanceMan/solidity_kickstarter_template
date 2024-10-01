@@ -1,0 +1,14 @@
+{
+    "dependencies": {
+        "@chainlink/contracts": "^1.2.0",
+        "@types/fs-extra": "^11.0.4",
+        "ethers": "^6.13.2",
+        "ganache": "^7.9.2",
+        "solc": "0.8.7-fixed",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.6.2"
+    },
+    "scripts": {
+        "compile": "yarn solcjs --bin --abi --include-path node_modules/ --base-path . -o . ./contracts/SimpleStorage.sol"
+    }
+}
